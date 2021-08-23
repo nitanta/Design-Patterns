@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		507A2E2826D3B77A001BC8F6 /* Patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Patterns; sourceTree = "<group>"; };
+		507A2E2926D3BA02001BC8F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		507A2E2A26D3BF5C001BC8F6 /* SOLID */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SOLID; sourceTree = "<group>"; };
+		507A2E2B26D3BF5C001BC8F6 /* Creational */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Creational; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		507A2E2126D3B756001BC8F6 = {
 			isa = PBXGroup;
 			children = (
-				507A2E2826D3B77A001BC8F6 /* Patterns */,
+				507A2E2926D3BA02001BC8F6 /* README.md */,
+				507A2E2B26D3BF5C001BC8F6 /* Creational */,
+				507A2E2A26D3BF5C001BC8F6 /* SOLID */,
 			);
 			sourceTree = "<group>";
 		};
