@@ -8,8 +8,27 @@
 
 /* Begin PBXFileReference section */
 		507A2E2926D3BA02001BC8F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		507A2E2A26D3BF5C001BC8F6 /* SOLID */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SOLID; sourceTree = "<group>"; };
-		507A2E2B26D3BF5C001BC8F6 /* Creational */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Creational; sourceTree = "<group>"; };
+		50A49EFA26D7E01F004D5EBD /* NoCacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCacheAdapter.swift; sourceTree = "<group>"; };
+		50A49EFB26D7E074004D5EBD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		50A49EFC26D7E08D004D5EBD /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		50A49EFD26D7E094004D5EBD /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		50A49EFE26D7E0A0004D5EBD /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		50A49EFF26D7E0AE004D5EBD /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
+		50A49F0026D7E0B6004D5EBD /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		50A49F1126D7EE07004D5EBD /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		50A49F1226D7EE07004D5EBD /* BuilderFacets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderFacets.swift; sourceTree = "<group>"; };
+		50A49F1326D7EE0D004D5EBD /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		50A49F1426D7EE0D004D5EBD /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		50A49F1526D7EE17004D5EBD /* DeepCopying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepCopying.swift; sourceTree = "<group>"; };
+		50A49F1626D7EE17004D5EBD /* Copying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copying.swift; sourceTree = "<group>"; };
+		50A49F1726D7EE1D004D5EBD /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		50A49F1826D7EE1D004D5EBD /* Monostate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monostate.swift; sourceTree = "<group>"; };
+		50A49F1A26D7EE49004D5EBD /* DIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIP.swift; sourceTree = "<group>"; };
+		50A49F1B26D7EE49004D5EBD /* OCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCP.swift; sourceTree = "<group>"; };
+		50A49F1C26D7EE49004D5EBD /* SRP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRP.swift; sourceTree = "<group>"; };
+		50A49F1D26D7EE49004D5EBD /* LSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSP.swift; sourceTree = "<group>"; };
+		50A49F1E26D7EE49004D5EBD /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
+		50A49F1F26D7F074004D5EBD /* CacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -17,9 +36,140 @@
 			isa = PBXGroup;
 			children = (
 				507A2E2926D3BA02001BC8F6 /* README.md */,
-				507A2E2B26D3BF5C001BC8F6 /* Creational */,
-				507A2E2A26D3BF5C001BC8F6 /* SOLID */,
+				50A49F1926D7EE33004D5EBD /* SOLID */,
+				50A49F0126D7ED2E004D5EBD /* Creational */,
+				50A49EF926D7E003004D5EBD /* Behavioral */,
 			);
+			sourceTree = "<group>";
+		};
+		50A49EF926D7E003004D5EBD /* Behavioral */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F0C26D7EDC1004D5EBD /* Proxy */,
+				50A49F0B26D7EDB7004D5EBD /* Flyweight */,
+				50A49F0A26D7EDAF004D5EBD /* Facade */,
+				50A49F0926D7EDA0004D5EBD /* Decorator */,
+				50A49F0826D7ED95004D5EBD /* Composite */,
+				50A49F0726D7ED8D004D5EBD /* Bridge */,
+				50A49F0626D7ED83004D5EBD /* Adapter */,
+			);
+			path = Behavioral;
+			sourceTree = "<group>";
+		};
+		50A49F0126D7ED2E004D5EBD /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1026D7EDFE004D5EBD /* Singleton */,
+				50A49F0F26D7EDF7004D5EBD /* Prototype */,
+				50A49F0E26D7EDED004D5EBD /* Factory */,
+				50A49F0D26D7EDE7004D5EBD /* Builder */,
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		50A49F0626D7ED83004D5EBD /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFA26D7E01F004D5EBD /* NoCacheAdapter.swift */,
+				50A49F1F26D7F074004D5EBD /* CacheAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		50A49F0726D7ED8D004D5EBD /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFB26D7E074004D5EBD /* Bridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		50A49F0826D7ED95004D5EBD /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFC26D7E08D004D5EBD /* Composite.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		50A49F0926D7EDA0004D5EBD /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFD26D7E094004D5EBD /* Decorator.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		50A49F0A26D7EDAF004D5EBD /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFE26D7E0A0004D5EBD /* Facade.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		50A49F0B26D7EDB7004D5EBD /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				50A49EFF26D7E0AE004D5EBD /* Flyweight.swift */,
+			);
+			path = Flyweight;
+			sourceTree = "<group>";
+		};
+		50A49F0C26D7EDC1004D5EBD /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F0026D7E0B6004D5EBD /* Proxy.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		50A49F0D26D7EDE7004D5EBD /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1126D7EE07004D5EBD /* Builder.swift */,
+				50A49F1226D7EE07004D5EBD /* BuilderFacets.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		50A49F0E26D7EDED004D5EBD /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1426D7EE0D004D5EBD /* AbstractFactory.swift */,
+				50A49F1326D7EE0D004D5EBD /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		50A49F0F26D7EDF7004D5EBD /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1626D7EE17004D5EBD /* Copying.swift */,
+				50A49F1526D7EE17004D5EBD /* DeepCopying.swift */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		50A49F1026D7EDFE004D5EBD /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1826D7EE1D004D5EBD /* Monostate.swift */,
+				50A49F1726D7EE1D004D5EBD /* Singleton.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		50A49F1926D7EE33004D5EBD /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				50A49F1A26D7EE49004D5EBD /* DIP.swift */,
+				50A49F1E26D7EE49004D5EBD /* ISP.swift */,
+				50A49F1D26D7EE49004D5EBD /* LSP.swift */,
+				50A49F1B26D7EE49004D5EBD /* OCP.swift */,
+				50A49F1C26D7EE49004D5EBD /* SRP.swift */,
+			);
+			path = SOLID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
