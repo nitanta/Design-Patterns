@@ -38,6 +38,109 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		5019CBCC26DBCE5A00AB5E41 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				5019CBD826DBCF6F00AB5E41 /* Visitor */,
+				5019CBD726DBCF2500AB5E41 /* Template */,
+				5019CBD626DBCF1800AB5E41 /* Strategy */,
+				5019CBD526DBCED200AB5E41 /* State */,
+				5019CBD426DBCECC00AB5E41 /* Observer */,
+				5019CBD326DBCEB800AB5E41 /* NullObject */,
+				5019CBD226DBCEB000AB5E41 /* Memento */,
+				5019CBD126DBCE9C00AB5E41 /* Mediator */,
+				5019CBD026DBCE9300AB5E41 /* Iterator */,
+				5019CBCF26DBCE8500AB5E41 /* Interpreter */,
+				5019CBCE26DBCE7500AB5E41 /* Command */,
+				5019CBCD26DBCE6700AB5E41 /* ChainOfResponsibility */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		5019CBCD26DBCE6700AB5E41 /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
+		5019CBCE26DBCE7500AB5E41 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		5019CBCF26DBCE8500AB5E41 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		5019CBD026DBCE9300AB5E41 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		5019CBD126DBCE9C00AB5E41 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		5019CBD226DBCEB000AB5E41 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
+		5019CBD326DBCEB800AB5E41 /* NullObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NullObject;
+			sourceTree = "<group>";
+		};
+		5019CBD426DBCECC00AB5E41 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		5019CBD526DBCED200AB5E41 /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		5019CBD626DBCF1800AB5E41 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		5019CBD726DBCF2500AB5E41 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		5019CBD826DBCF6F00AB5E41 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		507A2E2126D3B756001BC8F6 = {
 			isa = PBXGroup;
 			children = (
@@ -45,6 +148,7 @@
 				50A49F1926D7EE33004D5EBD /* SOLID */,
 				50A49F0126D7ED2E004D5EBD /* Creational */,
 				50A49EF926D7E003004D5EBD /* Behavioral */,
+				5019CBCC26DBCE5A00AB5E41 /* Structural */,
 			);
 			sourceTree = "<group>";
 		};

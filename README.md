@@ -12,20 +12,36 @@ Consists of 4 sections
     ### Dependency Inversion principles
         
         
-### Creational design### Single Responsibility principles
+### Creational design
     ### Builder pattern
     ### Factory pattern
     ### Prototype pattern
     ### Singleton pattern
     
     
-### Interface Segregation principles
+### Behavioral design
+    ### Adapter pattern
+    ### Bridge pattern
+    ### Decorator pattern
+    ### Facade pattern
+    ### Flyweight pattern
+    ### Proxy pattern
 
-### Dependency Inversion principles
 
 ### Structural design
-
-### Behavioral
+    ### Chain of Responsibility pattern
+    ### Command pattern
+    ### Interpreter pattern
+    ### Iterator pattern
+    ### Mediator pattern
+    ### Memento pattern
+    ### Null Object pattern
+    ### Observer pattern
+    ### State pattern
+    ### State pattern
+    ### Strategy pattern
+    ### Template pattern
+    ### Visitor pattern
 
 
 
