@@ -1,6 +1,6 @@
 # Design-Patterns
 
-Written for developers ease the understand various designs patterns for software development in Swift.
+Written for developers to ease the understand various designs patterns for software development in Swift.
 
 Consists of 4 sections
 
