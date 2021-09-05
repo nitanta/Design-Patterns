@@ -13,7 +13,13 @@
 		5024DE7126D940F400A12C0D /* StaticDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDecorator.swift; sourceTree = "<group>"; };
 		5024DE7226D944D600A12C0D /* FlyweightTextFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightTextFormatting.swift; sourceTree = "<group>"; };
 		5024DE7326D9561700A12C0D /* PropertyProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyProxy.swift; sourceTree = "<group>"; };
+		505D0C5726DE7A3000A6AE76 /* MethodChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodChain.swift; sourceTree = "<group>"; };
+		505D0C5826DE7A3900A6AE76 /* BrokerChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokerChain.swift; sourceTree = "<group>"; };
+		505D0C5926DE8F8900A6AE76 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		507A2E2926D3BA02001BC8F6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		50934C6D26E2732B0031D11B /* LexingAndParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexingAndParsing.swift; sourceTree = "<group>"; };
+		50934C6E26E2775B0031D11B /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
+		50934C6F26E277DC0031D11B /* ArrayBackedTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBackedTraversal.swift; sourceTree = "<group>"; };
 		50A49EFA26D7E01F004D5EBD /* NoCacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCacheAdapter.swift; sourceTree = "<group>"; };
 		50A49EFB26D7E074004D5EBD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		50A49EFC26D7E08D004D5EBD /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
@@ -35,6 +41,20 @@
 		50A49F1D26D7EE49004D5EBD /* LSP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSP.swift; sourceTree = "<group>"; };
 		50A49F1E26D7EE49004D5EBD /* ISP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISP.swift; sourceTree = "<group>"; };
 		50A49F1F26D7F074004D5EBD /* CacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAdapter.swift; sourceTree = "<group>"; };
+		50C0E24126E32403001E2029 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		50F0C70426E496C60021C035 /* MementoUndoRedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoUndoRedo.swift; sourceTree = "<group>"; };
+		50F0C70526E496FE0021C035 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		50F0C70626E498D90021C035 /* NullObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullObject.swift; sourceTree = "<group>"; };
+		50F0C70726E4E4D00021C035 /* ObserverEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverEvent.swift; sourceTree = "<group>"; };
+		50F0C70826E4E4E00021C035 /* PropertyObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyObservers.swift; sourceTree = "<group>"; };
+		50F0C70926E4F6B50021C035 /* HandmadeStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandmadeStateMachine.swift; sourceTree = "<group>"; };
+		50F0C70A26E4FBD70021C035 /* DynamicStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStrategy.swift; sourceTree = "<group>"; };
+		50F0C70B26E4FBE10021C035 /* StaticStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrategy.swift; sourceTree = "<group>"; };
+		50F0C70C26E4FF190021C035 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		50F0C70D26E51A830021C035 /* IntrusiveExpressionPrinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrusiveExpressionPrinting.swift; sourceTree = "<group>"; };
+		50F0C70E26E51AD90021C035 /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		50F0C70F26E51B5F0021C035 /* ReflectionBasedPrinting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionBasedPrinting.swift; sourceTree = "<group>"; };
+		50F0C71026E51C950021C035 /* DoubleDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleDispatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -60,6 +80,8 @@
 		5019CBCD26DBCE6700AB5E41 /* ChainOfResponsibility */ = {
 			isa = PBXGroup;
 			children = (
+				505D0C5726DE7A3000A6AE76 /* MethodChain.swift */,
+				505D0C5826DE7A3900A6AE76 /* BrokerChain.swift */,
 			);
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
@@ -67,6 +89,7 @@
 		5019CBCE26DBCE7500AB5E41 /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				505D0C5926DE8F8900A6AE76 /* Command.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -74,6 +97,7 @@
 		5019CBCF26DBCE8500AB5E41 /* Interpreter */ = {
 			isa = PBXGroup;
 			children = (
+				50934C6D26E2732B0031D11B /* LexingAndParsing.swift */,
 			);
 			path = Interpreter;
 			sourceTree = "<group>";
@@ -81,6 +105,8 @@
 		5019CBD026DBCE9300AB5E41 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
+				50934C6E26E2775B0031D11B /* TreeTraversal.swift */,
+				50934C6F26E277DC0031D11B /* ArrayBackedTraversal.swift */,
 			);
 			path = Iterator;
 			sourceTree = "<group>";
@@ -88,6 +114,7 @@
 		5019CBD126DBCE9C00AB5E41 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
+				50C0E24126E32403001E2029 /* ChatRoom.swift */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -95,6 +122,8 @@
 		5019CBD226DBCEB000AB5E41 /* Memento */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70426E496C60021C035 /* MementoUndoRedo.swift */,
+				50F0C70526E496FE0021C035 /* Memento.swift */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -102,6 +131,7 @@
 		5019CBD326DBCEB800AB5E41 /* NullObject */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70626E498D90021C035 /* NullObject.swift */,
 			);
 			path = NullObject;
 			sourceTree = "<group>";
@@ -109,6 +139,8 @@
 		5019CBD426DBCECC00AB5E41 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70726E4E4D00021C035 /* ObserverEvent.swift */,
+				50F0C70826E4E4E00021C035 /* PropertyObservers.swift */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
@@ -116,6 +148,7 @@
 		5019CBD526DBCED200AB5E41 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70926E4F6B50021C035 /* HandmadeStateMachine.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -123,6 +156,8 @@
 		5019CBD626DBCF1800AB5E41 /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70A26E4FBD70021C035 /* DynamicStrategy.swift */,
+				50F0C70B26E4FBE10021C035 /* StaticStrategy.swift */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -130,6 +165,7 @@
 		5019CBD726DBCF2500AB5E41 /* Template */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70C26E4FF190021C035 /* Template.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -137,6 +173,10 @@
 		5019CBD826DBCF6F00AB5E41 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
+				50F0C70D26E51A830021C035 /* IntrusiveExpressionPrinting.swift */,
+				50F0C70E26E51AD90021C035 /* Dispatch.swift */,
+				50F0C70F26E51B5F0021C035 /* ReflectionBasedPrinting.swift */,
+				50F0C71026E51C950021C035 /* DoubleDispatch.swift */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
