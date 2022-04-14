@@ -7,8 +7,7 @@
 
 import Foundation
 
-protocol HotDrink
-{
+protocol HotDrink {
   func consume()
 }
 
@@ -70,8 +69,7 @@ class HotDrinkMachine {
 
   func makeDrink() -> HotDrink {
     print("Available drinks")
-    for i in 0..<namedFactories.count
-    {
+    for i in 0..<namedFactories.count {
       let tuple = namedFactories[i]
       print("\(i): \(tuple.0)")
     }
@@ -80,8 +78,7 @@ class HotDrinkMachine {
   }
 }
 
-func main()
-{
+func main() {
   let machine = HotDrinkMachine()
   print(machine.namedFactories.count)
   let drink = machine.makeDrink()

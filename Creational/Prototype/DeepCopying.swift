@@ -1,30 +1,25 @@
 import Foundation
 
-protocol Copying
-{
+protocol Copying {
   // the 'required' keyword is only used in classes
   //init(copyFrom other: Self)
   func clone() -> Self
 }
 
-class Address : CustomStringConvertible, Copying
-{
+class Address : CustomStringConvertible, Copying {
   var streetAddress: String
   var city: String
 
-  init(_ streetAddress: String, _ city: String)
-  {
+  init(_ streetAddress: String, _ city: String) {
     self.streetAddress = streetAddress
     self.city = city
   }
 
-  func clone() -> Self
-  {
+  func clone() -> Self {
     return cloneImpl()
   }
 
-  private func cloneImpl<T>() -> T
-  {
+  private func cloneImpl<T>() -> T {
     return Address(streetAddress, city) as! T
   }
 
@@ -34,19 +29,16 @@ class Address : CustomStringConvertible, Copying
   //   city = other.city
   // }
 
-  var description: String
-  {
+  var description: String {
     return "\(streetAddress), \(city)"
   }
 }
 
-struct Employee: CustomStringConvertible, Copying
-{
+struct Employee: CustomStringConvertible, Copying {
   var name: String
   var address: Address
 
-  init(_ name: String, _ address: Address)
-  {
+  init(_ name: String, _ address: Address) {
     self.name = name
     self.address = address
   }
@@ -63,26 +55,22 @@ struct Employee: CustomStringConvertible, Copying
   //   address = Address(copyFrom: other.address)
   // }
 
-  func clone() -> Employee
-  {
+  func clone() -> Employee {
     return cloneImpl()
   }
 
-  private func cloneImpl<T>() -> T
-  {
+  private func cloneImpl<T>() -> T {
     return Employee(name, address.clone()) as! T
   }
 
-  var description: String
-  {
+  var description: String {
     return "My name is \(name) and I live at \(address)"
   }
 }
 
 
 
-func main()
-{
+func main() {
   var john = Employee("John", Address("123 London Road", "London"))
 
 

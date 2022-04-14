@@ -1,48 +1,46 @@
 import Foundation
 
-protocol Copying
-{
+/**
+ 
+ prototypes design pattern allows you to create objects by cloning an existing object instead of creating a new object from scratch. This pattern is used when the process of object creation is costly. when cloning, the newly copied object contains the same characteristics as its source object.
+ 
+ */
+
+protocol Copying {
   // the 'required' keyword is only used in classes
   init(copyFrom other: Self)
 }
 
-class Address : CustomStringConvertible, Copying
-{
+class Address : CustomStringConvertible, Copying {
   var streetAddress: String
   var city: String
 
-  init(_ streetAddress: String, _ city: String)
-  {
+  init(_ streetAddress: String, _ city: String) {
     self.streetAddress = streetAddress
     self.city = city
   }
 
-  required init(copyFrom other: Address)
-  {
+  required init(copyFrom other: Address) {
     streetAddress = other.streetAddress
     city = other.city
   }
 
-  var description: String
-  {
+  var description: String {
     return "\(streetAddress), \(city)"
   }
 }
 
-struct Employee: CustomStringConvertible, Copying
-{
+struct Employee: CustomStringConvertible, Copying {
   var name: String
   var address: Address
 
-  init(_ name: String, _ address: Address)
-  {
+  init(_ name: String, _ address: Address) {
     self.name = name
     self.address = address
   }
 
   // C++ style copy constructor
-  /* required */ init(copyFrom other: Employee)
-  {
+  /* required */ init(copyFrom other: Employee) {
     name = other.name
 
     // one option is to do this
@@ -52,16 +50,14 @@ struct Employee: CustomStringConvertible, Copying
     address = Address(copyFrom: other.address)
   }
 
-  var description: String
-  {
+  var description: String {
     return "My name is \(name) and I live at \(address)"
   }
 }
 
 
 
-func main()
-{
+func main() {
   var john = Employee("John", Address("123 London Road", "London"))
 
 

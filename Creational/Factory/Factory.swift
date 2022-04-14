@@ -7,116 +7,91 @@
 
 import Foundation
 
-class Point : CustomStringConvertible
-{
+class Point : CustomStringConvertibl {
   var x, y: Double
 
-  init(x: Double, y: Double)
-  {
+  init(x: Double, y: Double) {
     self.x = x
     self.y = y
   }
 
-  init(rho: Double, theta: Double)
-  {
+  init(rho: Double, theta: Double) {
     x = rho * cos(theta)
     y = rho * sin(theta)
   }
 
-  public var description: String
-  {
+  public var description: String {
     return "x = \(x), y = \(y)"
   }
 
   // factory method
-  static func createCartesian
-    (x: Double, y: Double) -> Point
-  {
+  static func createCartesian(x: Double, y: Double) -> Point {
     return Point(x:x, y:y)
   }
 
-  static func createPolar
-    (rho: Double, theta: Double) -> Point
-  {
+  static func createPolar(rho: Double, theta: Double) -> Point {
     return Point(rho:rho, theta:theta)
   }
 }
 
-class PointFactory
-{
-  func createCartesian
-    (x: Double, y: Double) -> Point
-  {
+class PointFactory {
+  func createCartesian(x: Double, y: Double) -> Point {
     return Point(x:x, y:y)
   }
 
   // feel free to make it static
-  static func createPolar
-    (rho: Double, theta: Double) -> Point
-  {
+  static func createPolar(rho: Double, theta: Double) -> Point {
     return Point(rho:rho, theta:theta)
   }
 }
 
-class ShadyPoint : CustomStringConvertible
-{
+class ShadyPoint : CustomStringConvertible {
   private var x, y: Double
 
-  private init(x: Double, y: Double)
-  {
+  private init(x: Double, y: Double) {
     self.x = x
     self.y = y
   }
 
-  private init(rho: Double, theta: Double)
-  {
+  private init(rho: Double, theta: Double) {
     x = rho * cos(theta)
     y = rho * sin(theta)
   }
 
-  public var description: String
-  {
+  public var description: String {
     return "x = \(x), y = \(y)"
   }
 
   // factory method
-  static func createCartesian
-    (x: Double, y: Double) -> Point
-  {
+  static func createCartesian(x: Double, y: Double) -> Point {
     return Point(x:x, y:y)
   }
 
-  static func createPolar
-    (rho: Double, theta: Double) -> Point
-  {
+  static func createPolar(rho: Double, theta: Double) -> Point {
     return Point(rho:rho, theta:theta)
   }
 
   //static let factory = ShadyPointFactory()
   static let factory = ShadyPointFactory.instance
 
-  class ShadyPointFactory
-  {
+  class ShadyPointFactory {
     // singleton
     private init() {}
+      
     static let instance = ShadyPointFactory()
 
-    func createCartesian
-      (x: Double, y: Double) -> ShadyPoint
-    {
+    func createCartesian(x: Double, y: Double) -> ShadyPoint {
       return ShadyPoint(x:x, y:y)
     }
 
-    static func createPolar
-      (rho: Double, theta: Double) -> ShadyPoint
-    {
+    static func createPolar(rho: Double, theta: Double) -> ShadyPoint {
       return ShadyPoint(rho:rho, theta:theta)
     }
   }
 }
 
-func main()
-{
+func main() {
+    
   let p = Point.createPolar(rho:1,theta:2)
   print(p)
 

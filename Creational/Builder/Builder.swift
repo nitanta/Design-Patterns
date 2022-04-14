@@ -7,8 +7,7 @@
 
 import Foundation
 
-class HtmlElement : CustomStringConvertible
-{
+class HtmlElement : CustomStringConvertible {
   var name = ""
   var text = ""
   var elements = [HtmlElement]()
@@ -16,29 +15,25 @@ class HtmlElement : CustomStringConvertible
 
 
   init() {}
-  init(name: String, text: String)
-  {
+    
+  init(name: String, text: String) {
     self.name = name
     self.text = text
   }
 
-  private func description
-    (_ indent:Int) -> String
-  {
+  private func description(_ indent:Int) -> String {
     var result = ""
     let i = String(repeating: " ", count: indent)
     result += "\(i)<\(name)>\n"
 
-    if (!text.isEmpty)
-    {
+    if (!text.isEmpty) {
       result += String(repeating: " ",
         count: indentSize * (indent + 1))
       result += text
       result += "\n"
     }
 
-    for e in elements
-    {
+    for e in elements {
       result += e.description(indent+1)
     }
 
@@ -47,53 +42,42 @@ class HtmlElement : CustomStringConvertible
     return result
   }
 
-  public var description: String
-  {
+  public var description: String {
     return description(0)
   }
 }
 
-class HtmlBuilder : CustomStringConvertible
-{
+class HtmlBuilder : CustomStringConvertible {
   private let rootName: String
   var root = HtmlElement()
 
-  init(rootName: String)
-  {
+  init(rootName: String) {
     self.rootName = rootName
     root.name = rootName
   }
 
   // not fluent
-  func addChild
-    (name: String, text: String)
-  {
+  func addChild(name: String, text: String) {
     let e = HtmlElement(name:name, text:text)
     root.elements.append(e)
   }
 
-  func addChildFluent
-    (childName: String, childText: String)
-    -> HtmlBuilder
-  {
+  func addChildFluent(childName: String, childText: String) -> HtmlBuilder {
     let e = HtmlElement(name:childName, text:childText)
     root.elements.append(e)
     return self
   }
 
-  public var description: String
-  {
+  public var description: String {
     return root.description
   }
 
-  func clear()
-  {
+  func clear() {
     root = HtmlElement(name: rootName, text: "")
   }
 }
 
-func main()
-{
+func main() {
   // if you want to build a simple HTML paragraph
   // using an ordinary string
   let hello = "hello"
@@ -103,8 +87,7 @@ func main()
   // now I want an HTML list with 2 words in it
   let words = ["hello", "world"]
   result = "<ul>"
-  for word in words
-  {
+  for word in words {
     result.append("<li>\(word)</li>")
   }
   result.append("</ul>")
